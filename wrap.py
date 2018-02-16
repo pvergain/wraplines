@@ -24,14 +24,14 @@ def wrap(input_file, max_length=80):
 		input_file (str) : the filename. 
 		max_length (int) : the max length of the line   
 
-    Calling example:
+    Calling example::
+    
+        pipenv run python wrap.py wrap input.txt
 
-        pipenv shell
-    
-        python wrap.py wrap input.txt > output.txt
-        
-        python wrap.py wrap 70 input.txt > output.txt
-    
+    or::
+
+        pipenv run python wrap.py wrap input.txt 70
+            
     """
     with open(input_file, 'r') as f:
         text = f.read()
